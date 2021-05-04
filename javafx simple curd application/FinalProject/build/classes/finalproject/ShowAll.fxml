@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.showall">
+   <children>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="14.0" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: gray; -fx-background-radius: 1cm;" text="Show All Information">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="-2.0" layoutY="69.0" prefHeight="279.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tvid" prefWidth="98.40002286434174" text="ID" />
+          <TableColumn fx:id="tvname" prefWidth="149.59998321533203" text="Name" />
+            <TableColumn fx:id="tvdept" minWidth="0.79998779296875" prefWidth="107.199951171875" text="Department" />
+            <TableColumn fx:id="tvbatch" prefWidth="95.20001220703125" text="Batch" />
+            <TableColumn fx:id="tvphn" prefWidth="150.39999389648438" text="Phone" />
+        </columns>
+      </TableView>
+      <Button layoutX="284.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: red; -fx-background-radius: 1cm;" text="OK" />
+   </children>
+</AnchorPane>
